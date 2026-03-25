@@ -56,6 +56,15 @@ for (int i = 0; i < 3; i++)
         printf("%d ",total[i][j]);
     }
     printf("\n");
-    
 }
+
+for (int i = 0; i < 3; i++) {
+        free(original[i]);  
+        free(identidade[i]);
+        free(total[i]);
+    }
+    free(original);
+    free(identidade);
+    free(total);
+    return 0;
 }
