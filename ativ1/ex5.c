@@ -33,7 +33,12 @@ int main() {
        }
        printf(" %d",total[i]);
     }
-    
-    
-    
+
+    for (int k = 0; k < 3; k++)
+    {
+        free(matriz[k]);
+    }
+    free(matriz);
+    free(vetor);
+    free(total);
 }
