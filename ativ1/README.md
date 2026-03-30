@@ -15,3 +15,8 @@
 6- 1. Utilizamos o Struct para formar o conjunto Aluno por ser tipos diferentes de variável, após isso declaramos do mesmo modo uma lista, aprovados e reprovados. Dentro de um for, o usuário insere as informações dos 10 alunos.
    2. Após isso é declarado também dois contadores para que não fique amontoado na hora da separação com o if (lista[i].mFinal>=5), o contador aumenta de acordo com a lista destinada.
    3. Por fim é exibido dentro de um for que repete até onde o contador acabou, assim exibe os Aprovados e os Reprovados.
+
+7- 1. Utilizamos uma struct chamada Livro para armazenar os dados de cada livro: título, autor e ano. Em seguida, declaramos um vetor de struct para armazenar os 5 livros.
+   2. Dentro de um for, o usuário insere as informações de cada livro. Utilizamos fgets para ler os campos de título e autor, e removemos o caractere de quebra de linha /n com o strcspn para não haver erros quando o usuário realizar a busca.
+   3. Após a leitura dos dados, o programa solicita ao usuário um título para realizar a busca, armazenando essa informação em uma variável. Em seguida, utilizamos outro for para verificar o vetor de livros e comparamos o título digitado com os títulos armazenados utilizando a função strcmp.
+   4. Caso o título seja encontrado, os dados do livro são exibidos na tela, e um contador registra a quantidade de resultados encontrados. Caso nenhum livro seja encontrado, o programa exibe uma mensagem informando que nenhum livro foi encontrado com o titulo buscado.
