@@ -20,3 +20,7 @@
    2. Dentro de um for, o usuário insere as informações de cada livro. Utilizamos fgets para ler os campos de título e autor, e removemos o caractere de quebra de linha /n com o strcspn para não haver erros quando o usuário realizar a busca.
    3. Após a leitura dos dados, o programa solicita ao usuário um título para realizar a busca, armazenando essa informação em uma variável. Em seguida, utilizamos outro for para verificar o vetor de livros e comparamos o título digitado com os títulos armazenados utilizando a função strcmp.
    4. Caso o título seja encontrado, os dados do livro são exibidos na tela, e um contador registra a quantidade de resultados encontrados. Caso nenhum livro seja encontrado, o programa exibe uma mensagem informando que nenhum livro foi encontrado com o titulo buscado.
+
+8- 1. Declaramos um vetor de inteiros com 5 posições e um ponteiro que aponta para o início do vetor.
+2. Utilizamos um for para ler os valores digitados pelo usuário, acessando o vetor por meio do (p + i), que representa o endereço de cada posição.
+3. Em seguida, utilizamos outro for para percorrer o vetor e mostrar o dobro de cada valor, acessando os elementos com *(p + i), que representa o valor armazenado.
