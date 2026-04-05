@@ -34,13 +34,13 @@ void pop(Pilha *p) {
 int main(){
     Pilha p;
     p.topo = NULL;
-    char palavra[100];
-    printf("Digite uma palavra: ");
-    scanf("%s", palavra);
-    for(int i = 0; i < strlen(palavra); i++){
-        push(&p, palavra[i]);
+    char frase[100];
+    printf("Digite uma String: ");
+    fgets(frase, sizeof(frase), stdin); 
+    for(int i = 0; i < strlen(frase); i++){
+        push(&p, frase[i]);
     }
-    printf("Palavra invertida: ");
+    printf("String invertida: ");
     while(p.topo){
         printf("%c", p.topo->letra);
         pop(&p);
