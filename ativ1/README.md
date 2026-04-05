@@ -3,7 +3,7 @@
 
 2- Declara o numeros com espaço de 5 inteiros, mostra a mensagem para que digite, inicia o laço de repetição para guardar 5 números no scanf, em seguida uma mensagem para a ordem inversa, novamente utiliza o laço de repetição mas inicia em 4 e decrementa até que chegue a zero exibindo a nova ordem com um printf.
 
-3-
+3-Primeiro é armazenado 9 numeros no ponteiro "matriz" depois é feito um "for" para o usuario digitar e salvar 9 numeros, e depois outro "for" para multiplicar por 5 todos os numeros. O ultimo "for" imprime em fomra de matriz os resultados das contas.
 
 4- 1. Primeiro foi feito uma função para guardar memória com malloc para depois ser chamada nas 3 matrizes (original, identidade e por fim o total). Na original foi atribuido os valores com um contador no for {1,2,3} {4,5,6} {7,8,9}.
    2. Para ter o valor da matriz de identidade foi utilizado o for para passar por i e j, quando o valor da linha e coluna forem iguais será 1, caso contrário 0, assim forma {1,0,0} {0,1,0} {0,0,1}.
@@ -24,3 +24,6 @@
 8- 1. Declaramos um vetor de inteiros com 5 posições e um ponteiro que aponta para o início do vetor.
 2. Utilizamos um for para ler os valores digitados pelo usuário, acessando o vetor por meio do (p + i), que representa o endereço de cada posição.
 3. Em seguida, utilizamos outro for para percorrer o vetor e mostrar o dobro de cada valor, acessando os elementos com *(p + i), que representa o valor armazenado.
+
+9. Criamos uma funcao de referencia e é feita uma ordenação simples que compara *a é maior que *b eles trocam de lugar e repete ate que o menor numero esteja no *a. E alem disso o programa retorna = 1 se todos os numeros forem iguais e 0 se forem diferentes, isso fora da função. 
+10. O typedef struct cria uma "ficha" chamada Aluno, a função recebe o a nota dos alunos e guarda a primeira nota como maior e depois percorre o resto da pilha ate encontrar a maior nota e atualiza o ponteiro, criamos um malloc para reservar a memoria da ficha dos alunos e depois imprimi o resultado da maior nota definida pela função
